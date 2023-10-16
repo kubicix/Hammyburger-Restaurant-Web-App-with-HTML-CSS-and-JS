@@ -7,10 +7,12 @@
 <link rel="icon" href="img/hamburger.ico" type="image/x-icon">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!-- <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body, html {
@@ -29,7 +31,7 @@ body, html {
 .w3-bar .w3-button {
   padding: 16px;
 }
-</style>
+</style> -->
 </head>
 <body>
 
@@ -80,6 +82,12 @@ body, html {
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
 </header>
+
+<!-- HAMBURGER PİE CHART -->
+
+<div class="w3-container" style="padding:128px 16px">
+  <canvas id="pieChart"></canvas>
+</div>
 
 <!-- About Section -->
 <div class="w3-container" style="padding:128px 16px" id="about">
@@ -362,6 +370,26 @@ body, html {
   <p>Powered by <a href="https://github.com/kubicix" title="W3.CSS" target="_blank" class="w3-hover-text-green">Kubilay Birer</a></p>
 </footer>
  
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.min.js"></script>
+
+<script>
+  //pie
+  var ctxP = document.getElementById("pieChart").getContext('2d');
+  var myPieChart = new Chart(ctxP, {
+    type: 'pie',
+    data: {
+      labels: ["Meat Burgers", "Vegan Burgers", "Chicken Burgers"],
+      datasets: [{
+        data: [300, 50, 200],
+        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C"],
+        hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
+      }]
+    },
+    options: {
+      responsive: true
+    }
+  });
+</script>
 <script>
 // Modal Image Gallery
 function onClick(element) {
@@ -389,5 +417,6 @@ function w3_close() {
 }
 </script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
