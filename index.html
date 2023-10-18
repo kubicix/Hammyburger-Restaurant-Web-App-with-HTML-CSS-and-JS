@@ -89,6 +89,11 @@ body, html {
   <h1 class="w3-center">Our hamburger distribution</h1>
   <canvas id="pieChart"></canvas>
 </div>
+<div class="w3-container" style="padding:128px 16px">
+  <h1 class="w3-center">Our Franchise distribution</h1>
+  <canvas id="horizontalBar"></canvas>
+</div>
+
 
 <!-- About Section -->
 <div class="w3-container" style="padding:128px 16px" id="about">
@@ -122,9 +127,9 @@ body, html {
 <div class="w3-container w3-light-grey" style="padding:128px 16px">
   <div class="w3-row-padding">
     <div class="w3-col m6">
-      <h3>We know design.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
-      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+      <h3>We know exactly what you want.</h3>
+      <p>Explore the art of flavor at HammyBurger, where passion meets palate, creating unforgettable dining experiences.</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Lovely Burgers</a></p>
     </div>
     <div class="w3-col m6">
       <img class="w3-image w3-round-large" src="img/burger2.jpg" alt="Buildings" width="700" height="394">
@@ -139,44 +144,44 @@ body, html {
   <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <img src="img/chef.jpg" alt="John" style="width:100%">
         <div class="w3-container">
-          <h3>John Doe</h3>
+          <h3>John Clay</h3>
           <p class="w3-opacity">CEO & Founder</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>With a passion for flavor, our CEO steers HammyBurger toward culinary excellence. Savor the innovation in every bite and make sure you will enjoy our burgers again!</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <img src="img/chef.jpg" alt="Jane" style="width:100%">
         <div class="w3-container">
-          <h3>Anja Doe</h3>
-          <p class="w3-opacity">Art Director</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <h3>Ryan Black</h3>
+          <p class="w3-opacity">CTO</p>
+          <p>Guided by a passion for burgers, our CTO pioneers tech advancements. Connect to explore the burger world's digital frontier.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <img src="img/chef.jpg" alt="Mike" style="width:100%">
         <div class="w3-container">
-          <h3>Mike Ross</h3>
-          <p class="w3-opacity">Web Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <h3>Jack Cole</h3>
+          <p class="w3-opacity">Franchise Director</p>
+          <p>Driven by a love for burgers, our Franchise Director ensures authentic taste across every HammyBurger outlet. Reach out to explore franchise opportunities.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+        <img src="img/chef.jpg" alt="Dan" style="width:100%">
         <div class="w3-container">
-          <h3>Dan Star</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <h3>Brock Moon</h3>
+          <p class="w3-opacity">Master Chef</p>
+          <p>Meet Brock Moon, our culinary virtuoso. With a passion for perfection, he crafts extraordinary flavors that define HammyBurger's unique taste. Every bite is a masterpiece.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
@@ -373,6 +378,36 @@ body, html {
  
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.min.js"></script>
 
+<script>
+  new Chart(document.getElementById("horizontalBar"), {
+    "type": "horizontalBar",
+    "data": {
+      "labels": ["Turkey", "Spain", "Malta", "Mexico", "USA", "Poland", "Germany"],
+      "datasets": [{
+        "label": "Franchise Count",
+        "data": [22, 33, 55, 12, 86, 23, 14],
+        "fill": false,
+        "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)",
+          "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)",
+          "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"
+        ],
+        "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)",
+          "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"
+        ],
+        "borderWidth": 1
+      }]
+    },
+    "options": {
+      "scales": {
+        "xAxes": [{
+          "ticks": {
+            "beginAtZero": true
+          }
+        }]
+      }
+    }
+  });
+</script>
 <script>
   //pie
   var ctxP = document.getElementById("pieChart").getContext('2d');
