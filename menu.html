@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HammyBurger
+</title>
+<meta charset="UTF-8">
+<link rel="icon" href="img/hamburger.ico" type="image/x-icon">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+    .container {
+  padding: 2rem 0rem;
+}
+
+h4 {
+  margin: 2rem 0rem 1rem;
+}
+
+.table-image {
+  td, th {
+    vertical-align: middle;
+  }
+}
+</style>
+<!-- <style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/burger1.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style> -->
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="img/logoclean.png" alt="" style="width: 4rem; height: auto;">HammyBurger</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="menu.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> MENU</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<div class="w3-container" style="padding:128px 16px">
+    <div class="container">
+        <div class="row">
+          <div class="col-12">
+              <table class="table table-image">
+                <thead>
+                  <tr>
+                    <th scope="col">Code</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Burger Name</th>
+                    <th scope="col">Meat Type</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td class="w-25">
+                        <img src="img/slide3.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                    </td>
+                    <td>Krabby Patty Burger</td>
+                    <td>Crab</td>
+                    <td>6.99$</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td class="w-25">
+                        <img src="img/slide1.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                    </td>
+                    <td>Chicken Burger</td>
+                    <td>Chicken</td>
+                    <td>4.99$</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td class="w-25">
+                        <img src="img/slide4.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                    </td>
+                    <td>Vegan Burger</td>
+                    <td>Vegan</td>
+                    <td>12.99$</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td class="w-25">
+                        <img src="img/slide2.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                    </td>
+                    <td>Gator Burger</td>
+                    <td>Not Gator</td>
+                    <td>5.99$</td>
+                  </tr>
+                </tbody>
+              </table>   
+          </div>
+        </div>
+      </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://github.com/kubicix" title="W3.CSS" target="_blank" class="w3-hover-text-green">Kubilay Birer</a></p>
+</footer>
+ 
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.bundle.min.js"></script>
+
+<script>
+  new Chart(document.getElementById("horizontalBar"), {
+    "type": "horizontalBar",
+    "data": {
+      "labels": ["Turkey", "Spain", "Malta", "Mexico", "USA", "Poland", "Germany"],
+      "datasets": [{
+        "label": "Franchise Count",
+        "data": [22, 33, 55, 12, 86, 23, 14],
+        "fill": false,
+        "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)",
+          "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)",
+          "rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"
+        ],
+        "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)",
+          "rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)", "rgb(201, 203, 207)"
+        ],
+        "borderWidth": 1
+      }]
+    },
+    "options": {
+      "scales": {
+        "xAxes": [{
+          "ticks": {
+            "beginAtZero": true
+          }
+        }]
+      }
+    }
+  });
+</script>
+<script>
+  //pie
+  var ctxP = document.getElementById("pieChart").getContext('2d');
+  var myPieChart = new Chart(ctxP, {
+    type: 'pie',
+    data: {
+      labels: ["Meat Burgers", "Vegan Burgers", "Chicken Burgers"],
+      datasets: [{
+        data: [300, 50, 200],
+        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C"],
+        hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870"]
+      }]
+    },
+    options: {
+      responsive: true
+    }
+  });
+</script>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
