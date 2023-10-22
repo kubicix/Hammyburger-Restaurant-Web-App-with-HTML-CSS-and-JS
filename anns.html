@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HammyBurger
+</title>
+<meta charset="UTF-8">
+<link rel="icon" href="img/hamburger.ico" type="image/x-icon">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+    body{
+ background:#eee;    
+}
+
+p {
+    font-size: 14px;
+    color: #777;
+}
+
+.blog .image {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 3px 0 0 3px;
+}
+
+.blog .image img {
+    width: 100%;
+    height: auto;
+}
+
+.blog .date {
+    top: -10px;
+    z-index: 99;
+    width: 65px;
+    right: -10px;
+    height: 65px;
+    padding: 10px;
+    position: absolute;
+    color:#FFFFFF;
+    font-weight:bold;
+    background: #5bc0de;
+    border-radius: 999px;
+}
+
+.blog .blog-details {
+    padding: 0 20px 0 0;
+}
+
+.blog {
+    padding: 0;
+}
+
+.well {
+    border: 0;
+    padding: 20px;
+    min-height: 63px;
+    background: #fff;
+    box-shadow: none;
+    border-radius: 3px;
+    position: relative;
+    max-height: 100000px;
+    border-bottom: 2px solid #ccc;
+}
+
+.blog .blog-details h2 {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.blog .date .blog-number {
+    color: #fff;
+    display: block;
+    font-size: 24px;
+    text-align: center;
+}        
+  .w3-dropdown-click, .w3-dropdown-click1, .w3-dropdown-click2 {
+    cursor: pointer;
+}
+  
+  .container {
+  padding: 2rem 0rem;
+}
+
+h4 {
+  margin: 2rem 0rem 1rem;
+}
+
+.table-image {
+  td, th {
+    vertical-align: middle;
+  }
+}
+</style>
+<!-- <style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/burger1.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style> -->
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top mb-5">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="img/logoclean.png" alt="" style="width: 4rem; height: auto;">HammyBurger</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small" id="navbar">
+        <a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-burger"></i> ABOUT US</a>
+        <a href="anns.html" class="w3-bar-item w3-button"><i class="fa-solid fa-bullhorn"></i> ANNOUNCEMENTS</a>
+        <div class="w3-dropdown-click w3-bar-item">
+          <i class="fa fa-handshake"></i> OUR MISSION <i class="fa fa-caret-down"></i>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="mission.html" class="w3-bar-item w3-button">Mission</a>
+                <a href="mission.html" class="w3-bar-item w3-button">Values</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-click1 w3-bar-item">
+        <i class="fa fa-user"></i> OUR TEAM</a> <i class="fa fa-caret-down"></i>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#mission" class="w3-bar-item w3-button">CHEFS</a>
+            <a href="#values" class="w3-bar-item w3-button">DIRECTORS</a>
+            <a href="#values" class="w3-bar-item w3-button">BARISTAS</a>
+          </div>  
+        </div>
+        <div class="w3-dropdown-click2 w3-bar-item">
+          <i class="fa fa-list"></i> OUR PRODUCTS <i class="fa fa-caret-down"></i>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+              <a href="menu.html" class="w3-bar-item w3-button">CHICKEN B'S</a>
+              <a href="menu.html" class="w3-bar-item w3-button">MEAT B'S</a>
+              <a href="menu.html" class="w3-bar-item w3-button">VEGAN B'S</a>
+          </div>
+        </div>
+        
+        <a href="pricing.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+        <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+    <a href="anns.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa-solid fa-bullhorn"></i> ANNOUNCEMENTS</a>
+    <div class="w3-dropdown-click w3-bar-item" id="ourMissionDropdown">
+      <i class="fa fa-handshake"></i> OUR MISSION <i class="fa fa-caret-down"></i>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="mission.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">Mission</a>
+            <a href="mission.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">Values</a>
+        </div>
+    </div>
+    <div class="w3-dropdown-click1 w3-bar-item" >
+      <i class="fa fa-user"></i> OUR TEAM</a> <i class="fa fa-caret-down"></i>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="MİSSİON" class="w3-bar-item w3-button" style="background-color: black;color:white;">CHEFS</a>
+          <a href="#values" class="w3-bar-item w3-button" style="background-color: black;color:white;">DIRECTORS</a>
+          <a href="#values" class="w3-bar-item w3-button" style="background-color: black;color:white;">BARISTAS</a>
+        </div>  
+      </div>
+    <div class="w3-dropdown-click2 w3-bar-item">
+      <i class="fa fa-list"></i> OUR PRODUCTS <i class="fa fa-caret-down"></i>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="menu.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">CHICKEN B'S</a>
+          <a href="menu.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">MEAT B'S</a>
+          <a href="menu.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">VEGAN B'S</a>
+      </div>
+    </div>
+    <a href="pricing.html" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+
+<!-- Announcements with bootstrap  -->
+<div class="w3-container" style="padding:62px 4px">
+    <div class="container bootstrap snippets bootdey">
+        <hr>
+      
+      <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="well blog">
+                  <a href="#">
+                      <div class="date primary">
+                          <span class="blog-date">Oct</span>
+                          <span class="blog-number">8</span>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                              <div class="image">
+                                  <img src="img/an1.jpg" alt="">
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                              <div class="blog-details">
+                                  <h2>Our Franchise Opening at Schenectady,NY!</h2>
+                                  <p>
+                                    Exciting news from HammyBurger! We're thrilled to announce the opening of our new franchise in Schenectady, NY! Join us for an unforgettable culinary experience, where quality meets taste. Indulge in our delectable range of gourmet burgers crafted with the finest ingredients. Your presence will make this event even more special. Come, celebrate, and savor the HammyBurger difference in Schenectady!
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <div class
+          ="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="well blog">
+                  <a href="#">
+                      <div class="date">
+                          <span class="blog-date">Sept</span>
+                          <span class="blog-number">28</span>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                              <div class="image">
+                                  <img src="img/an2.jpg" alt="">
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                              <div class="blog-details">
+                                  <h2>Unveiling Our New Menu</h2>
+                                  <p>
+                                    Exciting times at HammyBurger! We're thrilled to unveil our new menu, carefully crafted to delight your taste buds. Explore a tantalizing array of gourmet burgers, innovative sides, and delectable desserts, all prepared with passion and creativity. Each bite promises a culinary adventure, blending quality ingredients and exceptional flavors. Join us and embark on a gastronomic journey, celebrating the essence of HammyBurger's culinary excellence!
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="well blog">
+                  <a href="#">
+                      <div class="date success">
+                          <span class="blog-date">Sept</span>
+                          <span class="blog-number">23</span>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                              <div class="image">
+                                  <img src="img/an3.jpg" alt="">
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                              <div class="blog-details">
+                                  <h2>	HammyBurger’s Local Community Event!</h2>
+                                  <p>
+                                    HammyBurger warmly welcomes you to our Local Community Event! Join us for an evening of camaraderie and delectable delights. Dive into the flavors of unity as neighbors and friends gather to share laughter, stories, and mouthwatering treats. Let's celebrate our community spirit together! Your presence makes our event truly special. See you there!
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="well blog">
+                  <a href="#">
+                      <div class="date warning">
+                          <span class="blog-date">Sept</span>
+                          <span class="blog-number">14</span>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                              <div class="image">
+                                  <img src="img/an4.jpg" alt="">
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                              <div class="blog-details">
+                                  <h2>Exclusive Offers for HammyBurger Enthusiasts!</h2>
+                                  <p>
+                                    Indulge in the delight of exclusive offers tailored just for our dedicated HammyBurger enthusiasts! Pamper your taste buds with special discounts and delectable treats, crafted exclusively for you. Embrace the joy of savings while savoring our signature flavors. Hurry, these exclusive deals won't last long! Treat yourself to the HammyBurger experience you truly deserve.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+    
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="well blog info">
+                  <a href="#">
+                      <div class="date">
+                          <span class="blog-date">Sept</span>
+                          <span class="blog-number">9</span>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                              <div class="image">
+                                  <img src="img/an5.jpg" alt="">
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                              <div class="blog-details">
+                                  <h2>HammyBurger: Where Quality Meets Taste!</h2>
+                                  <p>
+                                    At HammyBurger, we take pride in crafting culinary masterpieces where quality meets taste. Each bite is an exquisite journey of flavors, meticulously prepared with the finest ingredients. Our commitment to quality ensures every dish reflects our passion for exceptional taste. Experience the perfect blend of premium ingredients and unparalleled flavors, making HammyBurger your ultimate destination for gourmet satisfaction.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+    
+          
+      </div>
+    </div>  
+</div>                  
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+  <br>
+  <!-- HammyBurger Firması Bilgileri -->
+  <div class="w3-margin-top">
+    <p style="color: whitesmoke;">HammyBurger Headquarters</p>
+  <p style="color: whitesmoke;">1234 Elm Street, New York, NY 10001, USA</p>
+  <p style="color: whitesmoke;">Phone: +1 (123) 456-7890</p>
+  </div>
+  
+
+  <div class="w3-xlarge w3-section">
+    <a href="https://github.com/kubicix" style="color: whitesmoke; text-decoration: none;">
+      <i class="fa-brands fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa-brands fa-instagram w3-hover-opacity"></i>
+    <i class="fa-brands fa-snapchat w3-hover-opacity"></i>
+    <i class="fa-brands fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa-brands fa-twitter w3-hover-opacity"></i>
+    <i class="fa-brands fa-linkedin w3-hover-opacity"></i>
+    </a>
+    
+  </div>
+  <p style="color: greenyellow;">Powered by <a href="https://github.com/kubicix" title="W3.CSS" target="_blank" class="w3-hover-text-green" style="color: yellowgreen;"><strong>Kubilay Birer</strong></a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+<script>
+  document.getElementById("menuButton").addEventListener("click", function() {
+      window.location.href = "menu.html"; // Menü sayfanızın URL'sini buraya ekleyin
+  });
+</script>
+
+<script>
+  var dropdown = document.querySelector('.w3-dropdown-click');
+  dropdown.addEventListener('click', function() {
+      var content = this.querySelector('.w3-dropdown-content');
+      if (content.style.display === 'block') {
+          content.style.display = 'none';
+      } else {
+          content.style.display = 'block';
+      }
+  });
+</script>
+
+<script>
+      // JavaScript to handle dropdown menus
+var dropdowns = document.querySelectorAll('.w3-dropdown-click1');
+
+dropdowns.forEach(function(dropdown) {
+    dropdown.addEventListener('click', function() {
+        var dropdownContent = this.querySelector('.w3-dropdown-content');
+        if (dropdownContent.style.display === 'block') {
+            dropdownContent.style.display = 'none';
+        } else {
+            dropdownContent.style.display = 'block';
+        }
+    });
+});
+
+// Function to close the sidebar
+function w3_close() {
+    document.getElementById('mySidebar').style.display = 'none';
+}
+
+</script>
+
+<script>
+  // JavaScript to handle dropdown menus
+var dropdowns = document.querySelectorAll('.w3-dropdown-click2');
+
+dropdowns.forEach(function(dropdown) {
+    dropdown.addEventListener('click', function() {
+        var dropdownContent = this.querySelector('.w3-dropdown-content');
+        if (dropdownContent.style.display === 'block') {
+            dropdownContent.style.display = 'none';
+        } else {
+            dropdownContent.style.display = 'block';
+        }
+    });
+});
+
+// Function to close the sidebar
+function w3_close() {
+    document.getElementById('mySidebar').style.display = 'none';
+}
+
+</script>
+
+<script>
+  // JavaScript to handle dropdown menu
+var missionDropdown = document.getElementById('ourMissionDropdown');
+
+missionDropdown.addEventListener('click', function() {
+    var dropdownContent = this.querySelector('.w3-dropdown-content');
+    if (dropdownContent.style.display === 'block') {
+        dropdownContent.style.display = 'none';
+    } else {
+        dropdownContent.style.display = 'block';
+    }
+});
+
+// Function to close the sidebar
+function w3_close() {
+    document.getElementById('mySidebar').style.display = 'none';
+}
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
