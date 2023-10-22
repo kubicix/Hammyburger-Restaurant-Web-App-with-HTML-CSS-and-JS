@@ -53,6 +53,5 @@ This project is licensed under the [MIT License](LICENSE).
 
 # Screenshots
 
-## Desktop Version
 ![screencapture-127-0-0-1-5500-index-html-2023-10-22-15_25_57](https://github.com/kubicix/Hammyburger-Restaurant-Web-App-with-HTML-CSS-and-JS/assets/96316375/93e69873-e868-4d29-8647-7593a7316dd9)
 
