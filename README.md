@@ -1,0 +1,61 @@
+# HammyBurger - Restaurant Web App
+
+Welcome to HammyBurger! This is a simple and delightful fast food restaurant website built using HTML, CSS, JavaScript, and Bootstrap.
+
+## Table of Contents
+
+- [About](#about)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Screenshots](#screenshots)
+
+## About
+
+HammyBurger is a fictional fast food restaurant, and this project serves as a showcase for building a responsive and interactive website using common web development technologies.
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+
+## Features
+
+- Responsive design for various screen sizes.
+- Interactive elements for an engaging user experience.
+- Menu display with enticing food images.
+- Contact form for customer inquiries.
+
+## Installation
+
+1. Clone the repository
+2. Open the project in your code editor.
+
+## Usage
+
+1. Open `index.html` in a web browser.
+2. Explore the website and navigate through the different sections.
+
+Feel free to customize the content, add more features, or adapt it for your own project.
+
+## Contributing
+
+Contributions are welcome! If you find a bug or have an enhancement in mind, please open an issue or create a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Screenshots
+
+# Desktop Version
+![screencapture-127-0-0-1-5500-index-html-2023-10-22-15_25_57](https://github.com/kubicix/Hammyburger-Restaurant-Web-App-with-HTML-CSS-and-JS/assets/96316375/93e69873-e868-4d29-8647-7593a7316dd9)
+
+# Mobile Version
+![screencapture-127-0-0-1-5500-index-html-2023-10-22-15_26_26](https://github.com/kubicix/Hammyburger-Restaurant-Web-App-with-HTML-CSS-and-JS/assets/96316375/ad28baba-747e-4749-9c62-5aa7db090702)
+
