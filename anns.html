@@ -123,81 +123,94 @@ body, html {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top mb-5">
-    <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="img/logoclean.png" alt="" style="width: 4rem; height: auto;">HammyBurger</a>
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="img/logoclean.png" alt=""
+              style="width: 4rem; height: auto;">HammyBurger</a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small" id="navbar">
-        <a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-burger"></i> ABOUT US</a>
-        <a href="anns.html" class="w3-bar-item w3-button"><i class="fa-solid fa-bullhorn"></i> ANNOUNCEMENTS</a>
-        <div class="w3-dropdown-click w3-bar-item">
-          <i class="fa fa-handshake"></i> OUR MISSION <i class="fa fa-caret-down"></i>
-            <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <a href="mission.html" class="w3-bar-item w3-button">Mission</a>
-                <a href="mission.html" class="w3-bar-item w3-button">Values</a>
-            </div>
-        </div>
-        <div class="w3-dropdown-click1 w3-bar-item">
-        <i class="fa fa-user"></i> OUR TEAM</a> <i class="fa fa-caret-down"></i>
-          <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="#mission" class="w3-bar-item w3-button">CHEFS</a>
-            <a href="#values" class="w3-bar-item w3-button">DIRECTORS</a>
-            <a href="#values" class="w3-bar-item w3-button">BARISTAS</a>
-          </div>  
-        </div>
-        <div class="w3-dropdown-click2 w3-bar-item">
-          <i class="fa fa-list"></i> OUR PRODUCTS <i class="fa fa-caret-down"></i>
-            <div class="w3-dropdown-content w3-bar-block w3-card-4">
-              <a href="menu.html" class="w3-bar-item w3-button">CHICKEN B'S</a>
-              <a href="menu.html" class="w3-bar-item w3-button">MEAT B'S</a>
-              <a href="menu.html" class="w3-bar-item w3-button">VEGAN B'S</a>
+          <a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-burger"></i> ABOUT US</a>
+          <a href="anns.html" class="w3-bar-item w3-button"><i class="fa-solid fa-bullhorn"></i> ANNOUNCEMENTS</a>
+          <div class="w3-dropdown-click w3-bar-item">
+              <i class="fa fa-handshake"></i> OUR MISSION <i class="fa fa-caret-down"></i>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                  <a href="mission.html" class="w3-bar-item w3-button">Mission</a>
+                  <a href="mission.html" class="w3-bar-item w3-button">Values</a>
+              </div>
           </div>
-        </div>
-        
-        <a href="pricing.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
-        <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
+          <div class="w3-dropdown-click1 w3-bar-item">
+              <i class="fa fa-user"></i> OUR TEAM</a> <i class="fa fa-caret-down"></i>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                  <a href="team.html" class="w3-bar-item w3-button">CHEFS</a>
+                  <a href="team.html" class="w3-bar-item w3-button">DIRECTORS</a>
+                  <a href="team.html" class="w3-bar-item w3-button">BARISTAS</a>
+              </div>
+          </div>
+          <div class="w3-dropdown-click2 w3-bar-item">
+              <i class="fa fa-list"></i> OUR PRODUCTS <i class="fa fa-caret-down"></i>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                  <a href="menu.html" class="w3-bar-item w3-button">CHICKEN B'S</a>
+                  <a href="menu.html" class="w3-bar-item w3-button">MEAT B'S</a>
+                  <a href="menu.html" class="w3-bar-item w3-button">VEGAN B'S</a>
+              </div>
+          </div>
+
+          <a href="pricing.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+          <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-  
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-        <i class="fa fa-bars"></i>
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()">
+          <i class="fa fa-bars"></i>
       </a>
-    </div>
   </div>
-  
-  <!-- Sidebar on small screens when clicking the menu icon -->
-  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
-    <a href="anns.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa-solid fa-bullhorn"></i> ANNOUNCEMENTS</a>
-    <div class="w3-dropdown-click w3-bar-item" id="ourMissionDropdown">
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+  style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+      ×</a>
+  <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+  <a href="anns.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa-solid fa-bullhorn"></i>
+      ANNOUNCEMENTS</a>
+  <div class="w3-dropdown-click w3-bar-item" id="ourMissionDropdown">
       <i class="fa fa-handshake"></i> OUR MISSION <i class="fa fa-caret-down"></i>
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="mission.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">Mission</a>
-            <a href="mission.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">Values</a>
-        </div>
-    </div>
-    <div class="w3-dropdown-click1 w3-bar-item" >
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="mission.html" class="w3-bar-item w3-button"
+              style="background-color: black;color:white;">Mission</a>
+          <a href="mission.html" class="w3-bar-item w3-button"
+              style="background-color: black;color:white;">Values</a>
+      </div>
+  </div>
+  <div class="w3-dropdown-click1 w3-bar-item">
       <i class="fa fa-user"></i> OUR TEAM</a> <i class="fa fa-caret-down"></i>
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="MİSSİON" class="w3-bar-item w3-button" style="background-color: black;color:white;">CHEFS</a>
-          <a href="#values" class="w3-bar-item w3-button" style="background-color: black;color:white;">DIRECTORS</a>
-          <a href="#values" class="w3-bar-item w3-button" style="background-color: black;color:white;">BARISTAS</a>
-        </div>  
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="team.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">CHEFS</a>
+          <a href="team.html" class="w3-bar-item w3-button"
+              style="background-color: black;color:white;">DIRECTORS</a>
+          <a href="team.html" class="w3-bar-item w3-button"
+              style="background-color: black;color:white;">BARISTAS</a>
       </div>
-    <div class="w3-dropdown-click2 w3-bar-item">
+  </div>
+  <div class="w3-dropdown-click2 w3-bar-item">
       <i class="fa fa-list"></i> OUR PRODUCTS <i class="fa fa-caret-down"></i>
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="menu.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">CHICKEN B'S</a>
-          <a href="menu.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">MEAT B'S</a>
-          <a href="menu.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">VEGAN B'S</a>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="menu.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">CHICKEN
+              B'S</a>
+          <a href="menu.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">MEAT
+              B'S</a>
+          <a href="menu.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">VEGAN
+              B'S</a>
       </div>
-    </div>
-    <a href="pricing.html" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-  </nav>
+  </div>
+  <a href="pricing.html" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
 
 <!-- Announcements with bootstrap  -->
 <div class="w3-container" style="padding:62px 4px">
+  <h1 class="w3-center" style="margin-top: 3rem;">ANNOUNCEMENTS</h1>
     <div class="container bootstrap snippets bootdey">
         <hr>
       

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HammyBurger
+    </title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/hamburger.ico" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <style>
+        /* Footer'ın z-index değerini ayarla, diğer içeriklerin üzerine gelmesini engelle */
+        footer {
+    z-index: 2; /* Footer'ın z-index değerini ayarla, diğer içeriklerden daha üstte olacak */
+}
+
+
+        .about {
+    cursor: pointer;
+    background-color: transparent;
+    background-image: linear-gradient(135deg, #FF6347 0%, #FFD700 50%, #FFFACD 100%);
+    color: #FFFFFF;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    height: 100vh;
+}
+
+.about-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Yarı saydam siyah arka plan */
+    border-radius: 10px; /* Yumuşak köşeler */
+    padding: 20px;
+    margin-bottom: 30px;
+    color: #FFFFFF; /* Beyaz yazı rengi */
+    transition: all .5s ease; /* Geçiş efekti */
+}
+
+
+
+.about-container:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Hover durumunda daha belirgin hale getirilmiş arka plan */
+}
+
+
+        .about h1 {
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .about h2 {
+            opacity: .8;
+        }
+
+        .about span {
+            display: block;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            margin: auto;
+            border-radius: 50%;
+            font-size: 40px;
+            color: #FFFFFF;
+            opacity: 0.7;
+            background-color: #4C0822;
+            border: 2px solid #4C0822;
+
+            webkit-transition: all .5s ease;
+            moz-transition: all .5s ease;
+            os-transition: all .5s ease;
+            transition: all .5s ease;
+
+        }
+
+        .about-item:hover span {
+            opacity: 1;
+            border: 2px solid #CC0039;
+            font-size: 42px;
+            -webkit-transform: scale(1.1, 1.1) rotate(360deg);
+            -moz-transform: scale(1.1, 1.1) rotate(360deg);
+            -o-transform: scale(1.1, 1.1) rotate(360deg);
+            transform: scale(1.1, 1.1) rotate(360deg);
+        }
+
+        .about-item:hover h2 {
+            opacity: 1;
+            -webkit-transform: scale(1.1, 1.1);
+            -moz-transform: scale(1.1, 1.1);
+            -o-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+        }
+
+        .about .lead {
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .w3-dropdown-click,
+        .w3-dropdown-click1,
+        .w3-dropdown-click2 {
+            cursor: pointer;
+        }
+
+        .container {
+            padding: 2rem 0rem;
+        }
+
+        h4 {
+            margin: 2rem 0rem 1rem;
+        }
+
+        .table-image {
+
+            td,
+            th {
+                vertical-align: middle;
+            }
+        }
+    </style>
+    <!-- <style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/burger1.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style> -->
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top mb-5">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="img/logoclean.png" alt=""
+                    style="width: 4rem; height: auto;">HammyBurger</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small" id="navbar">
+                <a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-burger"></i> ABOUT US</a>
+                <a href="anns.html" class="w3-bar-item w3-button"><i class="fa-solid fa-bullhorn"></i> ANNOUNCEMENTS</a>
+                <div class="w3-dropdown-click w3-bar-item">
+                    <i class="fa fa-handshake"></i> OUR MISSION <i class="fa fa-caret-down"></i>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="mission.html" class="w3-bar-item w3-button">Mission</a>
+                        <a href="mission.html" class="w3-bar-item w3-button">Values</a>
+                    </div>
+                </div>
+                <div class="w3-dropdown-click1 w3-bar-item">
+                    <i class="fa fa-user"></i> OUR TEAM</a> <i class="fa fa-caret-down"></i>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="team.html" class="w3-bar-item w3-button">CHEFS</a>
+                        <a href="team.html" class="w3-bar-item w3-button">DIRECTORS</a>
+                        <a href="team.html" class="w3-bar-item w3-button">BARISTAS</a>
+                    </div>
+                </div>
+                <div class="w3-dropdown-click2 w3-bar-item">
+                    <i class="fa fa-list"></i> OUR PRODUCTS <i class="fa fa-caret-down"></i>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="menu.html" class="w3-bar-item w3-button">CHICKEN B'S</a>
+                        <a href="menu.html" class="w3-bar-item w3-button">MEAT B'S</a>
+                        <a href="menu.html" class="w3-bar-item w3-button">VEGAN B'S</a>
+                    </div>
+                </div>
+
+                <a href="pricing.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+                <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+        <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+        <a href="anns.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa-solid fa-bullhorn"></i>
+            ANNOUNCEMENTS</a>
+        <div class="w3-dropdown-click w3-bar-item" id="ourMissionDropdown">
+            <i class="fa fa-handshake"></i> OUR MISSION <i class="fa fa-caret-down"></i>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="mission.html" class="w3-bar-item w3-button"
+                    style="background-color: black;color:white;">Mission</a>
+                <a href="mission.html" class="w3-bar-item w3-button"
+                    style="background-color: black;color:white;">Values</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-click1 w3-bar-item">
+            <i class="fa fa-user"></i> OUR TEAM</a> <i class="fa fa-caret-down"></i>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="team.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">CHEFS</a>
+                <a href="team.html" class="w3-bar-item w3-button"
+                    style="background-color: black;color:white;">DIRECTORS</a>
+                <a href="team.html" class="w3-bar-item w3-button"
+                    style="background-color: black;color:white;">BARISTAS</a>
+            </div>
+        </div>
+        <div class="w3-dropdown-click2 w3-bar-item">
+            <i class="fa fa-list"></i> OUR PRODUCTS <i class="fa fa-caret-down"></i>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="menu.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">CHICKEN
+                    B'S</a>
+                <a href="menu.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">MEAT
+                    B'S</a>
+                <a href="menu.html" class="w3-bar-item w3-button" style="background-color: black;color:white;">VEGAN
+                    B'S</a>
+            </div>
+        </div>
+        <a href="pricing.html" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+        <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <!-- about us section with bootstrap css html -->
+
+    <div class="w3-container" style="padding: 128px 16px">
+        <h1 class="w3-center" style="margin-top: 3rem;">ABOUT US</h1>
+        <section class="text-center about">
+            <h1>Welcome to HammyBurger</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+                        <div class="about-container">
+                            <span class="fa fa-group"></span>
+                            <h2>Our Team</h2>
+                            <p class="lead">At HammyBurger, our dedicated team of culinary artists and customer service professionals work tirelessly to craft a menu that tantalizes your taste buds. With a passion for excellence, we bring you a dining experience that goes beyond the ordinary.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+                        <div class="about-container">
+                            <span class="fa fa-info"></span>
+                            <h2>Our Story </h2>
+                            <p class="lead">Embark on a flavorful journey with HammyBurger. Our story began with a vision to create more than just burgers; we wanted to create memories. From sourcing the freshest ingredients to perfecting each recipe, every step of our journey is infused with passion and dedication. Explore our story, one delicious bite at a time.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
+                        <div class="about-container">
+                            <span class="fa fa-award"></span>
+                            <h2>Our Achievements</h2>
+                            <p class="lead">Over the years, HammyBurger has been honored with numerous awards and accolades. These achievements are a testament to our commitment to quality and customer satisfaction. Join us in celebrating these milestones and experience the award-winning flavors that define HammyBurger.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    
+    
+    
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64" style="z-index: 5; margin-top: 20rem;">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+        <br>
+        <!-- HammyBurger Firması Bilgileri -->
+        <div class="w3-margin-top">
+            <p style="color: whitesmoke;">HammyBurger Headquarters</p>
+            <p style="color: whitesmoke;">1234 Elm Street, New York, NY 10001, USA</p>
+            <p style="color: whitesmoke;">Phone: +1 (123) 456-7890</p>
+        </div>
+
+
+        <div class="w3-xlarge w3-section">
+            <a href="https://github.com/kubicix" style="color: whitesmoke; text-decoration: none;">
+                <i class="fa-brands fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa-brands fa-instagram w3-hover-opacity"></i>
+                <i class="fa-brands fa-snapchat w3-hover-opacity"></i>
+                <i class="fa-brands fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa-brands fa-twitter w3-hover-opacity"></i>
+                <i class="fa-brands fa-linkedin w3-hover-opacity"></i>
+            </a>
+
+        </div>
+        <p style="color: greenyellow;">Powered by <a href="https://github.com/kubicix" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green" style="color: yellowgreen;"><strong>Kubilay Birer</strong></a></p>
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+
+    <script>
+        document.getElementById("menuButton").addEventListener("click", function () {
+            window.location.href = "menu.html"; // Menü sayfanızın URL'sini buraya ekleyin
+        });
+    </script>
+
+    <script>
+        var dropdown = document.querySelector('.w3-dropdown-click');
+        dropdown.addEventListener('click', function () {
+            var content = this.querySelector('.w3-dropdown-content');
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        });
+    </script>
+
+    <script>
+        // JavaScript to handle dropdown menus
+        var dropdowns = document.querySelectorAll('.w3-dropdown-click1');
+
+        dropdowns.forEach(function (dropdown) {
+            dropdown.addEventListener('click', function () {
+                var dropdownContent = this.querySelector('.w3-dropdown-content');
+                if (dropdownContent.style.display === 'block') {
+                    dropdownContent.style.display = 'none';
+                } else {
+                    dropdownContent.style.display = 'block';
+                }
+            });
+        });
+
+        // Function to close the sidebar
+        function w3_close() {
+            document.getElementById('mySidebar').style.display = 'none';
+        }
+
+    </script>
+
+
+<script type='text/javascript'></script>
+    <script>
+        // JavaScript to handle dropdown menus
+        var dropdowns = document.querySelectorAll('.w3-dropdown-click2');
+
+        dropdowns.forEach(function (dropdown) {
+            dropdown.addEventListener('click', function () {
+                var dropdownContent = this.querySelector('.w3-dropdown-content');
+                if (dropdownContent.style.display === 'block') {
+                    dropdownContent.style.display = 'none';
+                } else {
+                    dropdownContent.style.display = 'block';
+                }
+            });
+        });
+
+        // Function to close the sidebar
+        function w3_close() {
+            document.getElementById('mySidebar').style.display = 'none';
+        }
+
+    </script>
+
+    <script>
+        // JavaScript to handle dropdown menu
+        var missionDropdown = document.getElementById('ourMissionDropdown');
+
+        missionDropdown.addEventListener('click', function () {
+            var dropdownContent = this.querySelector('.w3-dropdown-content');
+            if (dropdownContent.style.display === 'block') {
+                dropdownContent.style.display = 'none';
+            } else {
+                dropdownContent.style.display = 'block';
+            }
+        });
+
+        // Function to close the sidebar
+        function w3_close() {
+            document.getElementById('mySidebar').style.display = 'none';
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
